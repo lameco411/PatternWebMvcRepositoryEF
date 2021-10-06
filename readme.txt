@@ -25,7 +25,8 @@ trang web mẫu sẵn, đã chuẩn bị những thứ sau đây:
 - Chỉnh sửa đường dẫn hoặc thêm bớt file scss trong webpack.config.js
 ===============================================================================================
 - Đã cài đặt gulp.js (máy sử dụng phải có nodejs)
-
+- gulp build các file SCSS ở đường dẫn [assets] thành css lưu kết quả tại wwwroot/css/, sau đó tối ưu hóa lưu tại wwwroot/css/min/
+- thi hành tác vụ gulp: [gulp sass] hoặc [gulp](default) xem trong file gulpfile.js để xem nó chạy cái gì, hoặc cấu hình thêm trong đó
 
 
 

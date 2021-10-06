@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="assets\scss\StyleSheet.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.10" />  
     <PackageReference Include="Hangfire.Core" Version="1.7.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
@@ -28,6 +32,7 @@
     <Folder Include="Areas\Users\Models\Class\" />
     <Folder Include="Areas\Users\Models\Repository\" />
     <Folder Include="Areas\Users\Views\" />
+    <Folder Include="wwwroot\css\min\" />
   </ItemGroup>
 
 </Project>
