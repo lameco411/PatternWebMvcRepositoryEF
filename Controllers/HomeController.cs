@@ -11,7 +11,7 @@ namespace WebApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(app.Category.GetCategories());
         }
         public IActionResult Create()
         {
@@ -21,7 +21,7 @@ namespace WebApp.Controllers
         public IActionResult Create(Category obj)
         {
             app.Category.Add(obj);
-            return Redirect("/category");
+            return Redirect("/home");
         }
         public IActionResult Edit(int id)
         {
@@ -31,12 +31,12 @@ namespace WebApp.Controllers
         public IActionResult Edit(Category obj)
         {
             app.Category.Edit(obj);
-            return Redirect("/category");
+            return Redirect("/home");
         }
         public IActionResult Delete(int id)
         {
             app.Category.Delete(id);
-            return Redirect("/category");
+            return Redirect("/home");
         }
     }
 }

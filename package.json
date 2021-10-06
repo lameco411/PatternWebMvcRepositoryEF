@@ -1,0 +1,48 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "__ \t\t  __    _ _ _ _ _ __    _ _ _ _ _ __    _ _ _ _ _ _ __\r |  |                  /\\        |  \\         /  |  |   _ _ _ _ _   |   _ _ _ _ _   |   _ _ _ __   |  \r |  |                 /  \\       |   \\       /   |  |  |            |  |            |  |        |  |\r |  |                /    \\      |    \\     /    |  |  |            |  |            |  |        |  |\r |  |               /  /\\  \\     |  \\  \\   /  /  |  |  |_ _ _ _ _   |  |            |  |        |  |\r |  |              /  /__\\  \\    |  |\\  \\ /  /|  |  |  |_ _ _ _ _   |  |            |  |        |  |\r |  |\t\t\t /  /____\\  \\   |  | \\     / |  |  |  |            |  |            |  |        |  |\r |  | _ _ _ _ _  /  /      \\  \\  |  |  \\   /  |  |  |  |_ _ _ _ _   |  |_ _ _ _ __  |  |_ _ _ __|  |\r |  _ _ _ _ _ _ /  /        \\  \\ |  |   \\ /   |  |  |_ _ _ _ _ __   |_ _ _ _ _ _ _  |_ _ _ _ _ _ __|",
+  "main": "index.js",
+  "watch": {
+    "build": "src/scss/site.scss"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lameco411/PatternWebMvcRepositoryEF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lameco411/PatternWebMvcRepositoryEF/issues"
+  },
+  "homepage": "https://github.com/lameco411/PatternWebMvcRepositoryEF#readme",
+  "devDependencies": {
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.3.0",
+    "cssnano": "^5.0.8",
+    "file-loader": "^6.2.0",
+    "gulp": "^4.0.2",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.4.1",
+    "node-sass": "^6.0.1",
+    "npm-watch": "^0.11.0",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.3.9",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0"
+  }
+}

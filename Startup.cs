@@ -23,8 +23,10 @@ namespace WebApp
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddRazorPages().AddRazorRuntimeCompilation();//tự động biên dịch khi có thay đổi trong file cshtml
+        {  
+            //tự động biên dịch khi có thay đổi trong file cshtml
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+           // services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +52,9 @@ namespace WebApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");             
+                endpoints.MapAreaControllerRoute(name: "areas1", areaName: "Users", pattern: "{area:exists}/{controller=home}/{action=index}/{id?}");
+                
             });
         }
     }

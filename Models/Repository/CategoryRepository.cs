@@ -24,7 +24,9 @@ namespace WebApp.Models.Repository
         }
         public int Edit(Category obj)
         {
-            context.Categories.Update(obj);
+            var o = context.Categories.FirstOrDefault(x => x.CategoryId == obj.CategoryId);
+            o.CategoryName = obj.CategoryName;
+            o.Description = obj.Description;           
             return context.SaveChanges();
         }
         public int Delete(int id)
